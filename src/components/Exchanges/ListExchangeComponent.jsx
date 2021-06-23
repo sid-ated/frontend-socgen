@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ExchangeService from '../../services/ExchangeService'
-
+import '../styling.css';
 import * as UserService from  '../../services/user.service';
 
 class ListExchangeComponent extends Component {
@@ -58,7 +58,7 @@ class ListExchangeComponent extends Component {
                  }
                  <br></br>
                  <div className = "row">
-                        <table className = "table table-striped table-bordered">
+                        <table id="mytable">
 
                             <thead>
                                 <tr>

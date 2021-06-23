@@ -25,7 +25,7 @@ class UpdateCompanyComponent extends Component {
         this.changeBoardDirectorsHandler = this.changeBoardDirectorsHandler.bind(this);
         this.changeBriefHandler = this.changeBriefHandler.bind(this);
         this.changeSectorHandler = this.changeSectorHandler.bind(this);
-        this.updateEmployee = this.updateEmployee.bind(this);
+        this.updateCompany = this.updateCompany.bind(this);
     }
 
     componentDidMount(){

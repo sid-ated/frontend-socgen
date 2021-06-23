@@ -160,20 +160,20 @@ class ChartComponent extends Component {
     return (
         <div className="container">
           <div className="row">
-            <div className="col-8">
+            <div className="col-7">
               <ReactFC {...chartConfigs}/>
             </div>
-            <div className="col-4" onChange={(e) => this.onChangeHandler(e)}>
+            <div className="col-5" onChange={(e) => this.onChangeHandler(e)}>
               <label><strong>Charts</strong></label>
               <input type="radio" value="stockTime" name="chartValue" defaultChecked/> Company Stocks At Different Times
               <input type="radio" value="sectorTime" name="chartValue" /> Sector With Stock Price
               <input type="radio" value="sectorTurnover" name="chartValue" /> Sectors With Turnover
             </div>
-            <div className="col-4" onChange={(e) => this.setState({chartType: e.target.value})}>
+            <div onChange={(e) => this.setState({chartType: e.target.value})}>
               <label><strong>Chart Type</strong></label>
-              <input type="radio" value="column2d" name="charttype" defaultChecked/> 2D Column
+              <input type="radio" value="area2d" name="charttype" defaultChecked/> 2D Area
               <input type="radio" value="pie2d" name="charttype" /> 2D Pie
-              <input type="radio" value="bar2d" name="charttype" /> 2D Bars
+              <input type="radio" value="line" name="charttype" /> 2D Line
             </div>
             <h>Select Company For Type 1 Chart</h>
             <SearchComponent companies={this.state.companies} setParentCompany={this.setCompany}/>

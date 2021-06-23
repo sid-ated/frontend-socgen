@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import CompanyService from '../../services/CompanyService';
-
+import '../styling.css';
 import * as UserService from  '../../services/user.service';
 
 class ListCompanyComponent extends Component {
@@ -59,7 +59,7 @@ class ListCompanyComponent extends Component {
                  }
                  <br></br>
                  <div className = "row">
-                        <table className = "table table-striped table-bordered">
+                        <table id="mytable">
 
                             <thead>
                                 <tr>

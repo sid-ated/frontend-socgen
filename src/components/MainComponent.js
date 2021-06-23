@@ -28,7 +28,7 @@ import Register from './User/Register';
 import Profile from './User/Profile';
 import ExcelUploadComponent from './ExcelUpload/ExcelUploader';
 import ChartComponent from './ChartComponent';
-
+import './styling2.css';
 
 class Main extends Component {
   render(){

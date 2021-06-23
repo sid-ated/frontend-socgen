@@ -43,7 +43,7 @@ class UpdateExchangeComponent extends Component {
         e.preventDefault();
         let exchange = {name: this.state.name, intro: this.state.intro, 
             address: this.state.address, remarks: this.state.remarks};
-        ExchangeService.updateEmployee(exchange, this.state.id).then( res => {
+        ExchangeService.updateExchange(exchange, this.state.id).then( res => {
             this.props.history.push('/exchanges/all');
         });
     }
@@ -77,7 +77,7 @@ class UpdateExchangeComponent extends Component {
                    <div className = "container">
                         <div className = "row">
                             <div className = "card col-md-6 offset-md-3 offset-md-3">
-                                <h3 className="text-center">Update Employee</h3>
+                                <h3 className="text-center">Update Exchange</h3>
                                 <div className = "card-body">
                                     <form>
                                     <div className = "form-group">

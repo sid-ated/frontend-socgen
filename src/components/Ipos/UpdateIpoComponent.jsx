@@ -93,11 +93,11 @@ class UpdateIpoComponent extends Component {
             {this.state.currentUser.isAdmin === "YES" ? 
             <div>
                 <br></br>
-                   <div className = "container">
+                   <div >
                         <div className = "row">
                             <div className = "card col-md-6 offset-md-3 offset-md-3">
                                 <h3 className="text-center">Update IPO</h3>
-                                <div className = "card-body">
+                                <div>
                                     <form>
                                         <div className = "form-group">
                                             <label> Price: </label>

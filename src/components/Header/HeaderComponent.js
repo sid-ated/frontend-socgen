@@ -66,7 +66,7 @@ export default class HeaderComponent extends Component {
             All Stocks
           </NavLink>
           <NavLink to='/profile' activeStyle>
-            My Profile
+            Welcome {localStorage.getItem('username')}
           </NavLink>
           {this.state.currentUser.isAdmin==="YES"?
           <NavLink to='/excel/upload' activeStyle>

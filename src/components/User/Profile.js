@@ -23,7 +23,7 @@ export default class Profile extends Component {
     return (
       <>
         {localStorage.getItem('token') ?
-        <div className="container">
+        <div className="containerH">
           <header className="jumbotron">
             <h3>
             Profile

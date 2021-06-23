@@ -11,7 +11,7 @@ class LandingComponent extends Component {
 
     render() {
         return (
-            <div>
+            <div className="containerH">
                 <h5> Hey There!</h5>
             </div>
         )

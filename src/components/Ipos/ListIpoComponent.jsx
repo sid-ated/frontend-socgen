@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import IpoService from '../../services/IpoService'
 import * as UserService from  '../../services/user.service';
+import '../styling.css';
 
 class ListIpoComponent extends Component {
     constructor(props) {
@@ -57,7 +58,7 @@ class ListIpoComponent extends Component {
                  }
                  <br></br>
                  <div className = "row">
-                        <table className = "table table-striped table-bordered">
+                        <table id="mytable">
 
                             <thead>
                                 <tr>
